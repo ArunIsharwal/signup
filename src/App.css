@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #111;
+}
+
+.navbar h2 {
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.home {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.auth {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.auth form {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: auto;
+  gap: 10px;
+}
