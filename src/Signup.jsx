@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+const API_URL = import.meta.env.VITE_API_URL;
 export default function Signup() {
   const [form, setForm] = useState({
     name: "",
@@ -18,7 +18,7 @@ export default function Signup() {
     setMsg("Signing up...");
 
     try {
-      const res = await fetch("http://localhost:5000/api/auth/signup", {
+      const res = await fetch(`${API_URL}/api/auth/signup`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
